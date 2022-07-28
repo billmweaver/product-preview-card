@@ -9,6 +9,37 @@
     --ffHeading: font-family: 'Fraunces', serif;
 }
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+}
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+.card {
+    background-color: var(--white);
+    width: 343px;
+}
+
+.cardImg {
+    max-width: 100%;
+}
+
+p {
+    font-size: .875rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
