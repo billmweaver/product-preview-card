@@ -4,6 +4,7 @@
   --veryDarkBlue: hsl(212, 21%, 14%);
   --darkGrayishBlue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
+  --darkGreen: #1a4032;
 
   --ffMain: 'Montserrat', sans-serif;
   --ffHeading: 'Fraunces', serif;
@@ -56,7 +57,6 @@ p {
   margin: 24px;
   font-family: var(--ffMain);
   font-size: 0.75rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 5px;
@@ -67,7 +67,6 @@ p {
 .cardHeading {
   margin: 24px;
   font-family: var(--ffHeading);
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 100%;
@@ -77,7 +76,6 @@ p {
 .cardDescription {
   margin: 24px;
   font-family: var(--ffMain);
-  font-style: normal;
   font-weight: 500;
   line-height: 164%;
   color: var(--darkGrayishBlue);
@@ -88,7 +86,6 @@ p {
   display: inline-block;
   vertical-align: middle;
   font-family: var(--ffHeading);
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 100%;
@@ -100,7 +97,6 @@ p {
   display: inline-block;
   vertical-align: middle;
   font-family: var(--ffMain);
-  font-style: normal;
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 177%;
@@ -117,7 +113,6 @@ p {
   border: none;
   background-color: var(--darkCyan);
   font-family: var(--ffMain);
-  font-style: normal;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 100%;
@@ -128,6 +123,10 @@ p {
   display: inline-block;
   vertical-align: middle;
   margin-right: 14px;
+}
+
+.cardButton:active {
+  background-color: var(--darkGreen);
 }
 
 .attribution {
