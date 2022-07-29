@@ -1,22 +1,33 @@
 :root {
-    --darkCyan: hsl(158, 36%, 37%);
-    --cream: hsl(30, 38%, 92%);
-    --veryDarkBlue: hsl(212, 21%, 14%);
-    --darkGrayishBlue: hsl(228, 12%, 48%);
-    --white: hsl(0, 0%, 100%);
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
 
-    --ffMain: font-family: 'Montserrat', sans-serif;
-    --ffHeading: font-family: 'Fraunces', serif;
+  --ffMain: 'Montserrat', sans-serif;
+  --ffHeading: 'Fraunces', serif;
 }
 
-html, body {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
   background-color: var(--cream);
 }
+
+p {
+  font-size: 0.875rem;
+}
+
 .content {
   flex: 1 0 auto;
   display: flex;
@@ -28,16 +39,77 @@ body {
 }
 
 .card {
-    background-color: var(--white);
-    width: 343px;
+  background-color: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 343px;
 }
 
 .cardImg {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-p {
-    font-size: .875rem;
+.cardCategory {
+  margin: 24px;
+  font-family: var(--ffMain);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--darkGrayishBlue);
+}
+
+.cardHeading {
+  margin: 24px;
+  font-family: var(--ffHeading);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: var(--veryDarkBlue);
+}
+
+.cardDescription {
+  margin: 24px;
+  font-family: var(--ffMain);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164%;
+  color: var(--darkGrayishBlue);
+}
+
+.cardSalePrice {
+  margin: 0 24px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: var(--ffHeading);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: var(--darkCyan);
+}
+
+.cardOrigPrice {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: var(--ffMain);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 177%;
+  text-decoration-line: line-through;
+  color: var(--darkGrayishBlue);
+}
+
+.cardButton {
+  display: block;
+  margin: 24px;
+  width: 100%;
+  height: 48px;
+  background-color: var(--darkCyan);
 }
 
 .attribution {
@@ -47,5 +119,3 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-
