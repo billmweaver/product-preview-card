@@ -29,24 +29,34 @@
   <body>
     <main class="content">
       <div class="card">
-        <img
-          class="cardImg"
-          src="images/image-product-mobile.jpg"
-          alt="A bottle of perfume"
-        />
-        <div class="cardCategory">perfume</div>
-        <h2 class="cardHeading">Gabrielle Essence Eau De Parfum</h2>
-        <p class="cardDescription">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <p>
-          <span class="cardSalePrice">$149.99</span
-          ><span class="cardOrigPrice">$169.99</span>
-        </p>
-        <button class="cardButton">
-          <img src="images/icon-cart.svg" alt="" />Add to Cart
-        </button>
+        <div>
+          <picture>
+            <source
+              media="(min-width:585px)"
+              srcset="images/image-product-desktop.jpg"
+            />
+            <img
+              class="cardImg"
+              src="images/image-product-mobile.jpg"
+              alt="A bottle of perfume"
+            />
+          </picture>
+        </div>
+        <div class="cardContent">
+          <div class="cardCategory">perfume</div>
+          <h2 class="cardHeading">Gabrielle Essence Eau De Parfum</h2>
+          <p class="cardDescription">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p>
+            <span class="cardSalePrice">$149.99</span
+            ><span class="cardOrigPrice">$169.99</span>
+          </p>
+          <button class="cardButton">
+            <img src="images/icon-cart.svg" alt="" />Add to Cart
+          </button>
+        </div>
       </div>
     </main>
 

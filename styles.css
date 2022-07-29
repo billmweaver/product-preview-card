@@ -40,10 +40,12 @@ p {
 
 .card {
   margin: 10px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--white);
   border-radius: 10px;
   overflow: hidden;
-  width: 343px;
+  max-width: 343px;
 }
 
 .cardImg {
@@ -82,7 +84,7 @@ p {
 }
 
 .cardSalePrice {
-  margin: 0 24px;
+  margin-left: 24px;
   display: inline-block;
   vertical-align: middle;
   font-family: var(--ffHeading);
@@ -94,6 +96,7 @@ p {
 }
 
 .cardOrigPrice {
+  margin-left: 24px;
   display: inline-block;
   vertical-align: middle;
   font-family: var(--ffMain);
@@ -133,4 +136,22 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 585px) {
+  .card {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .cardImg {
+    width: 100%;
+    max-width: 300px;
+    flex: 50% 1 1;
+  }
+
+  .cardContent {
+    min-width: 240px;
+    flex: 50% 1 1;
+  }
 }
