@@ -39,8 +39,9 @@ p {
 }
 
 .card {
+  margin: 10px;
   background-color: var(--white);
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   width: 343px;
 }
@@ -107,9 +108,23 @@ p {
 .cardButton {
   display: block;
   margin: 24px;
-  width: 100%;
+  width: calc(100% - 48px);
   height: 48px;
+  border-radius: 8px;
+  border: none;
   background-color: var(--darkCyan);
+  font-family: var(--ffMain);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.cardButton img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 14px;
 }
 
 .attribution {
